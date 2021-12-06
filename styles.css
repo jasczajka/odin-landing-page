@@ -1,28 +1,50 @@
 .header, .container-1, .container-1-left, .container-2, .container-2-boxes,
 .container-2-box, .container-3, .container-4, 
-.call-to-action-box,.call-to-action-text, .footer
+.call-to-action-box,.call-to-action-text, .footer, .image-placeholder
 {
     display:flex;
 }
 
 body
 {
-    height: 100vh;
+    margin:0px;
     
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+/* links */
+a
+{
+    padding:10px;
+}
+a:link, a:visited
+{
+    color: #e5e7eb;
+    text-decoration: none;
+}
+a:hover
+{
+    color: #e5e7eb;
+    text-decoration: underline;
+
 }
 
 button
 {
     background-color: #3882f6;
-    border-color: #e5e7eb;
     color: #e5e7eb;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bold;
+    height: 30px;
+    width:100px;
+    border:none;
 }
+
+
 .header
 {
+    padding: 10px 10%;
     justify-content: space-between;
+    
 }
 .header, .container-1, .footer
 {
@@ -31,6 +53,7 @@ button
 .header-logo
 {
     font-size: 24px;
+    font-weight: bold;
     color: #f9faf8;
 }
 .header-links, .container-1-left-text
@@ -38,15 +61,24 @@ button
     font-size: 18px;
     color: #e5e7eb;
 }
+
+
+
 .container-1
 {
+    padding: 10px 10% 40px 10%;
+    gap:15px;
     justify-content: center;
     align-items: center;
     height: 25%;
+    flex:1;
+   
 }
 .container-1-left
 {
+    max-width:50%;
     flex-direction: column;
+    gap:5px;
 }
 .container-1-left-title
 {
@@ -55,24 +87,57 @@ button
     color: #f9faf8;
 
 }
+.image-placeholder
+{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: #c5c7ca ;
+    height: 200px;
+    max-width:50%;
+    flex:1;
+    
+}
 .container-2
 {
+    padding: 10px 15% 40px 15%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 25%;
+    flex-grow:1;
+
 }
 .container-2-information
 {
+    padding: 40px;
     font-size: 36px;
     font-weight: 800;
     color:#1f2937;
 }
+.container-2-boxes
+{
+    gap:5%;
+}
 .container-2-box
 {
+    
     flex-direction: column;
+    align-items: center;
 }
-
+.container-2-box-subtext
+{
+    text-align: center;
+}
+.container-2-box-image
+{
+    position: relative;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    border: solid;
+    border-radius: 5px;
+    border-color: #3882f6;
+}
 .container-3
 {
     flex-direction: column;
@@ -112,9 +177,8 @@ button
 
 .footer
 {
-    height:10%;
     justify-content: center;
     align-items: center;
     color: #e5e7eb;
-
 }
+
