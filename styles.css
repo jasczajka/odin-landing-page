@@ -1,6 +1,6 @@
 .header, .container-1, .container-1-left, .container-2, .container-2-boxes,
 .container-2-box, .container-3, .container-4, 
-.call-to-action-box,.call-to-action-text, .footer, .image-placeholder
+.call-to-action-box,.call-to-action-text, .footer, .image-placeholder, .quote-author
 {
     display:flex;
 }
@@ -130,31 +130,37 @@ button
 }
 .container-2-box-image
 {
-    position: relative;
-    width: 100%;
+    width: 80%;
     height:0;
-    padding-bottom: 100%;
+    padding-bottom: 80%;
     border: solid;
     border-radius: 5px;
     border-color: #3882f6;
 }
 .container-3
 {
+    padding: 5% 20%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height:25%;
     background-color: #e5e7eb;
+    flex-wrap: wrap;
 }
 .quote
 {
-    font: 36px;
+    font-size: 36px;
     font-style: italic;
     font-weight: lighter;
 }
-
+.quote-author
+{
+    font-weight:bold;
+    align-self: flex-end;
+}
 .container-4
 {
+    padding: 5% 20%;
     height: 15%;
     justify-content: center;
     align-items: center;
@@ -163,6 +169,10 @@ button
 .call-to-action-box
 {
     background-color: #3882f6;
+    padding: 30px 70px;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
 }
 .call-to-action-text
 {
@@ -174,11 +184,17 @@ button
     font-size: large;
     font-weight: bold;
 }
+.call-to-action-box-button
+{
+    border: solid #e5e7eb;
+    margin-left: 5%;
+}
 
 .footer
 {
     justify-content: center;
     align-items: center;
     color: #e5e7eb;
+    padding:5px;
 }
 
